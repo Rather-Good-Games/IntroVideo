@@ -7,9 +7,11 @@
 
 **Author:** RatherGood1
 
-**Version**: 0.1
+**Version**: 0.2
 
-**Updated:** 26 Oct 21
+Version 0.2 adds CLIENT_BUILD to only run video on client side.  Add to Project settings-> Script compilation -> Script define symbols "CLIENT_BUILD" or server build will fail. 
+
+**Updated:** 27 Oct 21
 
 **Compatibility: (tested on) Suriyun** **MMORPG Kit Version 1.70f**
 
@@ -26,13 +28,11 @@ You need to provide your own intro video to replace sample.
 
 A camera is needed in the scene.
 
-
 **Core MMORPG Kit modifications:**
 
 Need to modify script: "UISceneLoading" to add "protected virtual" to 
 
 "protected override IEnumerator LoadSceneRoutine(string sceneName)"
-
 
 **Instructions for use:**
 

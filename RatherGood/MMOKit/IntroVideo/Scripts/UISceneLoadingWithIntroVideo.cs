@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-//RatherGood MultiplayerARPG playe intro video mod
+//RatherGood MultiplayerARPG play intro video mod
 
 namespace MultiplayerARPG
 {
@@ -20,6 +20,8 @@ namespace MultiplayerARPG
         //CORE MOD: add "protected virtual" to LoadSceneRoutine
         protected override IEnumerator LoadSceneRoutine(string sceneName)
         {
+
+#if CLIENT_BUILD
 
             if (sceneName == GameInstance.Singleton.HomeSceneName)
             {
@@ -52,6 +54,10 @@ namespace MultiplayerARPG
             {
                 yield return base.LoadSceneRoutine(sceneName);
             }
+#else
+            yield return base.LoadSceneRoutine(sceneName);
+#endif
+
         }
 
         /// <summary>
@@ -74,9 +80,7 @@ namespace MultiplayerARPG
         private void Start()
         {
             loadScreenVideoPlayer = GetComponent<VideoPlayer>();
-
         }
-
 
 
     }
