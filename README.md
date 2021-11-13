@@ -52,3 +52,4 @@ See Unity Video Player documentation to see how to set this up. Beyond the scope
  
 **Done.**
 
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L7RYB7NRR78L6)
